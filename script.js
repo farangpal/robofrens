@@ -74,7 +74,7 @@ const getAccount = async () => {
 
 const sendTransaction =  async () => {
     const priceToWei = (price * 1e18).toString(16)
-    const gasLimit = (200_000 * +input.value).toString(16);
+    const gasLimit = (100_000 * +input.value).toString(16);
     ethereum.request({
             method: 'eth_sendTransaction',
             params: [
